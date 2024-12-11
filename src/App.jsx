@@ -1,5 +1,13 @@
+import React from "react";
+import TitleSection from "./components/atoms/TitleSection";
+import History from "./pages/History";
+
 function App() {
-   return <></>;
+   return (
+      <React.Fragment>
+         <History />
+      </React.Fragment>
+   );
 }
 
 export default App;
