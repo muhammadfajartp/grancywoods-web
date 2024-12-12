@@ -13,7 +13,7 @@ const Timeline = () => {
          <div className="flex flex-row min-h-[600px] border border-solid border-white border-x-0 bg-[url('/map.jpg')] bg-cover bg-center w-screen relative ">
             <div className="absolute inset-0 bg-black bg-opacity-50 backdrop-blur-md"></div>
             <div className="relative z-10 w-full flex flex-row ">
-               <div className="relative w-1/2 h-screen flex justify-start items-center py-4">
+               <div className="relative w-1/2 h-screen flex justify-center items-center my-6">
                   <CircleTimeline />
                </div>
                <div className=" w-1/2 h-full flex justify-center items-center px-22">
