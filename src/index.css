@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200..1000&family=Public+Sans:wght@100..900&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -14,5 +13,5 @@ body {
    overflow-x: hidden;
    background-color: #242424;
    width: 100vw;
-   font-family: "Nunito Sans", "Public Sans", sans-serif;
+   font-family: "Urbanist", sans-serif;
 }

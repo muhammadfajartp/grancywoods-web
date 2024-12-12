@@ -1,0 +1,26 @@
+.container {
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh; /* Tinggi layar penuh */
+   width: 100vw; /* Lebar layar penuh */
+}
+
+.circle {
+   position: relative;
+   width: 300px; /* Ukuran lingkaran */
+   height: 300px;
+   border: 8px solid white;
+   border-radius: 50%;
+   background: linear-gradient(to right, black, transparent);
+   overflow: visible;
+}
+
+.dot {
+   position: absolute;
+   top: 50%; /* Pusat lingkaran */
+   left: 50%;
+   transform-origin: center -150px; /* Jarak dari pusat ke posisi dot */
+   transition: transform 0.05s linear;
+}
