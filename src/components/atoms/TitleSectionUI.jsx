@@ -1,6 +1,6 @@
 import React from "react";
 
-const TitleSection = () => {
+const TitleSectionUI = () => {
    return (
       <React.Fragment>
          <h2 className="text-white text-4xl uppercase font-bold ps-16 pb-16">Timeline</h2>
@@ -8,4 +8,4 @@ const TitleSection = () => {
    );
 };
 
-export default TitleSection;
+export default TitleSectionUI;
