@@ -9,8 +9,8 @@
 
 .circle {
    position: relative;
-   width: 300px; /* Ukuran lingkaran */
-   height: 300px;
+   width: 100%; /* Responsif mengikuti lebar kontainer */
+   height: 100%;
    border: 8px solid white;
    border-radius: 50%;
    background: linear-gradient(to right, black, transparent);
@@ -23,4 +23,18 @@
    left: 50%;
    transform-origin: center -150px; /* Jarak dari pusat ke posisi dot */
    transition: transform 0.05s linear;
+}
+
+@media (max-width: 768px) {
+   .circle {
+      width: 70%; /* Ukuran lingkaran lebih kecil di layar lebih kecil */
+      height: 70%;
+   }
+}
+
+@media (max-width: 480px) {
+   .circle {
+      width: 50%;
+      height: 50%;
+   }
 }
