@@ -39,16 +39,17 @@ const Timeline = () => {
    const activeDot = timelineDots.find((dot) => dot.id === activeDotId);
 
    return (
-      <section className=" container pt-16">
+      <section className=" container pt-16 ">
          <TitleSectionUI title="TIMELINE" />
-         <div className="flex flex-row min-h-[600px] border border-solid border-white border-x-0 bg-[url('/map.jpg')] bg-cover bg-center w-screen relative ">
+         <div className="flex flex-row min-h-[200px] border border-solid border-white border-x-0 bg-[url('/map.jpg')] bg-cover bg-center w-screen relative ">
             <div className="absolute inset-0 bg-black bg-opacity-50 backdrop-blur-md"></div>
             <div className="relative  w-full flex flex-col sm:flex-row">
-               <div className="relative w-full sm:w-1/2 h-screen flex justify-center items-center my-6">
-                  <CircleTimeline timelineDots={timelineDots} onDotClick={handleDotClick} />
+               <div className="relative w-full sm:w-1/2 h-[500px] sm:h-screen flex justify-center items-center my-6">
+                  <CircleTimeline timelineDots={timelineDots} onDotClick={handleDotClick} smallScreenOffset={-120} />
                </div>
-               <div className="w-full sm:w-1/2 min-h-96 flex justify-start items-center px-6 sm:px-12 md:px-16 lg:px-22">
-                  <div className="text-white">
+
+               <div className="w-full sm:w-1/2 h-auto flex justify-start items-center px-6 sm:px-12 md:px-16 lg:px-22 ">
+                  <div className="text-white py-8">
                      <h2 className="text-2xl sm:text-3xl md:text-4xl">{activeDot?.desc.title}</h2>
                      <br />
                      <p className="text-lg sm:text-xl md:text-2xl">{formatStoryWithLineBreaks(activeDot?.desc.story)}</p>
