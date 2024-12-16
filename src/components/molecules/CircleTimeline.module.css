@@ -1,26 +1,29 @@
-.container {
+.circleContainer {
    position: relative;
+   width: 100%;
+   max-width: 700px;
+   aspect-ratio: 1; /* Menjaga proporsi lingkaran */
+   border: 8px solid white;
+   border-radius: 50%;
+   overflow: visible;
+   background: linear-gradient(to right, black, transparent);
    display: flex;
    justify-content: center;
    align-items: center;
-   height: 100vh; /* Tinggi layar penuh */
-   width: 100vw; /* Lebar layar penuh */
-}
-
-.circle {
-   position: relative;
-   width: 300px; /* Ukuran lingkaran */
-   height: 300px;
-   border: 8px solid white;
-   border-radius: 50%;
-   background: linear-gradient(to right, black, transparent);
-   overflow: visible;
 }
 
 .dot {
    position: absolute;
-   top: 50%; /* Pusat lingkaran */
-   left: 50%;
-   transform-origin: center -150px; /* Jarak dari pusat ke posisi dot */
-   transition: transform 0.05s linear;
+   transition: transform 0.7s ease;
+}
+
+.dotActive {
+   background-color: red; /* Contoh gaya untuk dot aktif */
+}
+
+@media (max-width: 768px) {
+   .circleContainer {
+      max-width: 400px; /* Ukuran lebih kecil untuk layar kecil */
+      border-width: 4px;
+   }
 }
